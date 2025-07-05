@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Heaven's Gallery -home</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        color: #059212;
+        height: 100vh;
+      }
+      .welcome {
+        position: absolute;
+        top: 0;
+        color: #059212;
+        background: url(bgimage.webp) center no-repeat;
+        background-size: cover;
+        filter: contrast(1.5);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 4rem;
+        font-weight: 800;
+        gap: 10px;
+        font-family: "Courier New", Courier, monospace;
+        animation-name: opening;
+        animation-duration: 6.6s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        z-index: -99;
+      }
+      .letter {
+        color: black;
+        animation: tiggle 3s ease-in 0.8s 1 normal;
+        transform-origin: bottom;
+      }
+      .letter:nth-child(2) {
+        animation-delay: 1s;
+      }
+      .letter:nth-child(3) {
+        animation-delay: 1.1s;
+      }
+
+      .letter:nth-child(4) {
+        animation-delay: 1.2s;
+      }
+
+      .letter:nth-child(5) {
+        animation-delay: 1.3s;
+      }
+
+      .letter:nth-child(6) {
+        animation-delay: 1.4s;
+      }
+
+      .letter:nth-child(7) {
+        animation-delay: 1.5s;
+      }
+
+      .letter:nth-child(9) {
+        animation-delay: 1.6s;
+      }
+
+      .letter:nth-child(10) {
+        animation-delay: 1.7s;
+      }
+      @keyframes opening {
+        0% {
+          z-index: 99;
+        }
+
+        20% {
+          z-index: 99;
+        }
+
+        40% {
+          z-index: 99;
+        }
+
+        60% {
+          z-index: 99;
+        }
+
+        100% {
+          z-index: -99;
+        }
+      }
+
+      @keyframes tiggle {
+        0% {
+          font-size: 8rem;
+          font-weight: 800;
+          color: white;
+        }
+        20% {
+          text-shadow: 0 0 10px black, 0 0 10px black, 10px 10px 20px black;
+          opacity: 8;
+        }
+
+        35% {
+          text-shadow: 0 0 10px black, 0 0 30px black, 10px 10px 30px black;
+          opacity: 5;
+        }
+        50% {
+          color: white;
+          transform: rotate(30deg);
+        }
+
+        70% {
+          text-shadow: 0 0 10px black, 0 0 10px black, 10px 10px 10px black;
+          opacity: 8;
+        }
+        100% {
+          font-size: 4rem;
+          color: white;
+          font-weight: 800;
+        }
+      }
+      /* .welcome1 {
+        display: inline-flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 8rem;
+        color: #059212;
+        animation: tiggle1 3s ease-in 2s 1 normal;
+      } */
+      @keyframes tiggle1 {
+        0% {
+          font-size: 8rem;
+          font-weight: 800;
+          color: #059212;
+        }
+        20% {
+          opacity: 8;
+        }
+        50% {
+          color: white;
+          transform: rotate(25deg);
+        }
+        70% {
+          opacity: 8;
+        }
+        100% {
+          font-size: 4rem;
+          color: white;
+          font-weight: 800;
+        }
+      }
+      main {
+        background: url(bgimage.webp) center no-repeat;
+        background-size: cover;
+        filter: contrast(1.5);
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        color: #059212;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="welcome">
+      <div class="letter" style="font-size: 8rem">W</div>
+      <div class="letter">E</div>
+      <div class="letter">l</div>
+      <div class="letter">C</div>
+      <div class="letter">O</div>
+      <div class="letter">M</div>
+      <div class="letter">E</div>
+      <div class="letter"></div>
+      <div class="letter"></div>
+      <div class="letter" style="font-size: 8rem">T</div>
+      <div class="letter">O</div>
+    </div>
+
+    <main>
+      <div class="navbar">
+        <img src="images/projectpic1.jpg" alt="pi" class="imgpart" />
+        <h1>Heaven's Gallery</h1>
+        <img src="images/reverspis.jpg" alt="" class="imgpart1" />
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <a href="about.html"
+              >About me
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#059212"
+              >
+                <path
+                  d="M673-446.67H160v-66.66h513l-240-240L480-800l320 320-320 320-47-46.67 240-240Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="work1.html" target="_blank"
+              >See My Work 1
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#059212"
+              >
+                <path
+                  d="M673-446.67H160v-66.66h513l-240-240L480-800l320 320-320 320-47-46.67 240-240Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="work2.html" target="_blank"
+              >See My Work 2
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#059212"
+              >
+                <path
+                  d="M673-446.67H160v-66.66h513l-240-240L480-800l320 320-320 320-47-46.67 240-240Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <p>&copy; 2024 Heaven's Gallery - syed yasar hasan  all rights reserved </p>
+      </div>
+    </main>
+  </body>
+</html>
